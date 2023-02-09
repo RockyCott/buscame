@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Búscame",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
