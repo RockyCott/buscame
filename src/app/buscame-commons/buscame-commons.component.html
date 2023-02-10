@@ -1,0 +1,78 @@
+<ion-split-pane when="(min-width: 1500px)" contentId="main-content">
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-content>
+      <ion-list id="buscame-list">
+        <ion-list-header>Búscame</ion-list-header>
+        <ion-note>Me complace poder ayudarte</ion-note>
+
+        <ion-menu-toggle
+          auto-hide="false"
+          *ngFor="let p of appPages; let i = index"
+        >
+          <ion-item
+            routerDirection="root"
+            [routerLink]="[p.url]"
+            lines="none"
+            detail="false"
+            routerLinkActive="selected"
+          >
+            <ion-icon
+              slot="start"
+              [ios]="p.icon + '-outline'"
+              [md]="p.icon + '-sharp'"
+            ></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <!-- <ion-list id="labels-list">
+        <ion-list-header>Labels</ion-list-header>
+
+        <ion-item *ngFor="let label of labels" lines="none">
+          <ion-icon
+            slot="start"
+            ios="bookmark-outline"
+            md="bookmark-sharp"
+          ></ion-icon>
+          <ion-label>{{ label }}</ion-label>
+        </ion-item>
+      </ion-list> -->
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="toolbar">Búscame</ion-title>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-router-outlet></ion-router-outlet>
+    </ion-content>
+    <!-- boton flotante para mobile -->
+    <ion-fab *ngIf="isMobile" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="alert-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <!-- boton flotante para pc -->
+    <ion-fab
+      *ngIf="!isMobile"
+      vertical="bottom"
+      horizontal="end"
+      style="right: 20px"
+    >
+      <ion-fab-button>
+        <ion-icon name="alert-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-split-pane>
