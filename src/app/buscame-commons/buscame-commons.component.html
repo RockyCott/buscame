@@ -59,7 +59,7 @@
     </ion-content>
     <!-- boton flotante para mobile -->
     <ion-fab *ngIf="isMobile" vertical="bottom" horizontal="end">
-      <ion-fab-button>
+      <ion-fab-button [routerLink]="['/emergencia']">
         <ion-icon name="alert-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>

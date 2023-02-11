@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BuscameCommonsComponent } from './buscame-commons/buscame.component';
+import { EmergencyPageComponent } from './emergency-page/emergency-page.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,13 @@ const routes: Routes = [
         path: 'home',
         loadChildren: () =>
           import('./home/home.module').then((m) => m.HomeModule),
+      },
+      {
+        path: 'emergencia',
+        loadChildren: () =>
+          import('./emergency-page/emergency-page.module').then(
+            (m) => m.EmergencyPageModule
+          ),
       },
     ],
   },

@@ -1,0 +1,12 @@
+.custom-slider {
+    width: 100%; /* Aqui puedes definir el ancho */
+    .img-slide {
+      height: 200px;
+      width: 600px;
+      object-fit: cover;
+    }
+}
+
+.screen-emergency {
+    --background: red;
+}

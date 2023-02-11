@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="main-screen">
   <div class="welcome-banner">
     <div class="welcome-banner__content">
       <h1 class="welcome-banner__title">Ahora estás segura</h1>
@@ -7,15 +7,46 @@
       </div>
     </div>
   </div>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Información Adicional</ion-card-subtitle>
-      <ion-card-title>Más detalles</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo risus
-      eget dolor euismod, a dictum urna bibendum.
-    </ion-card-content>
-  </ion-card>
+  <div class="screen-two">
+    <div class="welcome-banner">
+      <div class="welcome-banner__content">
+        <h1 class="welcome-banner__title">Bienvenida a Búscame</h1>
+        <!--decripcion -->
+        <p class="welcome-banner__description">
+          El sitio donde siempre habrá alguien que te escuchará y estarás segura
+          en todo momento
+        </p>
+      </div>
+      <ion-slides pager class="custom-slider custom-pager">
+        <ion-slide>
+          <ion-card>
+            <img
+              src="https://www.teahub.io/photos/full/204-2049196_phone-wallpaper-free-phone-wallpaper-download-flower-phone.jpg"
+              alt="Imagen 1"
+              class="img-slide"
+            />
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <img
+              src="https://www.teahub.io/photos/full/109-1096466_cherry-blossom-iphone-wallpaper-anime.jpg"
+              alt="Imagen 2"
+              class="img-slide"
+            />
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <img
+              src="https://i.pinimg.com/originals/b7/80/cf/b780cf63f2c0402fea2a76c0322c99a1.jpg"
+              alt="Imagen 3"
+              class="img-slide"
+            />
+          </ion-card>
+        </ion-slide>
+        <!-- Agrega más slides según sea necesario -->
+      </ion-slides>
+    </div>
+  </div>
 </ion-content>
