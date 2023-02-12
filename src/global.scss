@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,7 +24,24 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-
+@import "material-icons/iconfont/material-icons.css";
 ion-button {
-    text-transform: none;
+  text-transform: none;
 }
+
+ion-card {
+  border-radius: 8px;
+}
+
+// body {
+//   background-image: url("https://static.vecteezy.com/system/resources/previews/011/047/536/original/smartphone-and-mobile-phone-free-png.png");
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+// html,
+// body {
+//   height: 100%;
+//   overflow: hidden;
+// }

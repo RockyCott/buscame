@@ -8,8 +8,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BuscameCommonsComponent } from './buscame-commons/buscame.component';
+import { ToolbarComponent } from './buscame-commons/components/toolbar/toolbar.component';
 @NgModule({
-  declarations: [AppComponent, BuscameCommonsComponent],
+  declarations: [AppComponent, BuscameCommonsComponent, ToolbarComponent],
   imports: [
     FormsModule,
     BrowserModule,

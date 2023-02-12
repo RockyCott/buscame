@@ -1,66 +1,98 @@
-.help-banner__content {
+.screen-emergency {
+  background-color: #ffdadb;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 55px;
+  .help-banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .help-banner__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #40000d;
+      margin: 0;
+    }
 
-  .help-banner__title {
-    position: absolute;
-    width: 248px;
-    height: 32px;
-    left: 90px;
-    top: 96px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #40000d;
+    .help-banner__description {
+      margin: 0;
+      padding: 0 80px 0 80px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #40000d;
+    }
   }
-
-  .help-banner__description {
-    position: absolute;
-    width: 284px;
-    height: 48px;
-    left: 72px;
-    top: 144px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-
-    color: #40000d;
+  .card-auxiliares {
+    margin-top: 25px;
+    ion-slide {
+      ion-card {
+        min-height: 248px;
+        width: 240px;
+        .card-text {
+          display: flex;
+          padding: 20px;
+          justify-content: start;
+          flex-direction: column;
+          .title {
+            color: #92002a;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            text-align: start;
+            font-size: 24px;
+          }
+          .subtitle {
+            color: #92002a;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            text-align: start;
+            font-size: 14px;
+          }
+          .description {
+            color: #40000D;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: start;
+          }
+        }
+      }
+    }
+    .card-image {
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+    }
   }
-}
-
-.custom-slider {
-  height: 80%;
-  /* Aqui puedes definir la altura */
-  width: 85%;
-
-  /* Aqui puedes definir el ancho */
-  .img-slide {
-    height: 150%;
-    object-fit: cover;
+  ion-card {
+    height: 100%;
   }
-}
-
-.custom-pager .swiper-pagination-bullet {
-  width: 8px;
-  height: 150%;
-  border-radius: 50%;
-  background-color: #D09C53;
-  opacity: 0.5;
-}
-
-.custom-pager .swiper-pagination-bullet-active {
-  background-color: #000;
-  opacity: 1;
-}
-
-.screen-emergency {
-  --background: #ffdadb;
+  .custom-slider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 550px; /* Aqui puedes definir la altura */
+    width: 85%; /* Aqui puedes definir el ancho */
+    ion-card {
+      height: 100%;
+      width: 85%;
+    }
+    .img-slide {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
