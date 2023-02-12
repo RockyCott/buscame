@@ -1,12 +1,66 @@
+.help-banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .help-banner__title {
+    position: absolute;
+    width: 248px;
+    height: 32px;
+    left: 90px;
+    top: 96px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #40000d;
+  }
+
+  .help-banner__description {
+    position: absolute;
+    width: 284px;
+    height: 48px;
+    left: 72px;
+    top: 144px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #40000d;
+  }
+}
+
 .custom-slider {
-    width: 100%; /* Aqui puedes definir el ancho */
-    .img-slide {
-      height: 200px;
-      width: 600px;
-      object-fit: cover;
-    }
+  height: 80%;
+  /* Aqui puedes definir la altura */
+  width: 85%;
+
+  /* Aqui puedes definir el ancho */
+  .img-slide {
+    height: 150%;
+    object-fit: cover;
+  }
+}
+
+.custom-pager .swiper-pagination-bullet {
+  width: 8px;
+  height: 150%;
+  border-radius: 50%;
+  background-color: #D09C53;
+  opacity: 0.5;
+}
+
+.custom-pager .swiper-pagination-bullet-active {
+  background-color: #000;
+  opacity: 1;
 }
 
 .screen-emergency {
-    --background: red;
+  --background: #ffdadb;
 }

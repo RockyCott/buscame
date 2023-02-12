@@ -33,6 +33,13 @@ const routes: Routes = [
             (m) => m.EmergencyPageModule
           ),
       },
+      {
+        path: 'contacto',
+        loadChildren: () =>
+          import('./contact-page/contact-page.module').then(
+            (m) => m.ContactPageModule
+          ),
+      },
     ],
   },
 ];
