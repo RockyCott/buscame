@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-japanese-hakone-hot-spring-promotion-background-image_185692.jpg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/fondo%20landing%20page.jpg?alt=media&token=c0c1aee0-094f-4389-8250-6d5f439aa07b");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -67,25 +67,12 @@
       height: 100%;
     }
     .custom-slider {
-      height: 70%; /* Aqui puedes definir la altura */
+      height: 75%; /* Aqui puedes definir la altura */
       width: 85%; /* Aqui puedes definir el ancho */
       .img-slide {
         height: 100%;
         object-fit: cover;
       }
-    }
-
-    .custom-pager .swiper-pagination-bullet {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #ccc;
-      opacity: 0.5;
-    }
-    
-    .custom-pager .swiper-pagination-bullet-active {
-      background-color: #000;
-      opacity: 1;
     }
     
   }
