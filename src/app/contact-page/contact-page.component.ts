@@ -16,4 +16,13 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
     this.toolbarService.setToolbarSettings('Contáctanos', true, false);
   }
+
+  scrollToCard() {
+    let card = document.getElementById('slides-card');
+    card?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
 }
