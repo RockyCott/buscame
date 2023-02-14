@@ -10,9 +10,6 @@ export class BuscameCommonsComponent implements OnInit {
     { title: 'Inicio', url: '/home', icon: 'home' },
     { title: 'Contacto', url: '/contacto', icon: 'call' },
     { title: 'Emergencia', url: '/emergencia', icon: 'alert' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

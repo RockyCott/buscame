@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  UntypedFormBuilder,
+  UntypedFormControl,
+  UntypedFormGroup,
+  Validators,
+} from '@angular/forms';
+import { AlertController } from '@ionic/angular';
 import { ToolbarService } from '../buscame-commons/components/toolbar/toolbar.service';
 
 @Component({
@@ -11,18 +18,42 @@ export class ContactPageComponent implements OnInit {
     spaceBetween: 0,
     slidesPerView: 1.35,
   };
-  constructor(private toolbarService: ToolbarService) {}
+
+  form!: UntypedFormGroup;
+
+  constructor(
+    private toolbarService: ToolbarService,
+    private alertController: AlertController,
+    private builder: UntypedFormBuilder
+  ) {}
 
   ngOnInit() {
+    this.form = this.builder.group({
+      numPhone: ['', Validators.required],
+    });
     this.toolbarService.setToolbarSettings('Contáctanos', true, false);
   }
 
-  scrollToCard() {
-    let card = document.getElementById('slides-card');
-    card?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
+  async presentAlert() {
+    const alertContent = {
+      header: '',
+      subHeader: '',
+      message: '',
+    };
+    if (this.form.value.numPhone != '' && this.form.value.numPhone != null) {
+      alertContent.header = 'De acuerdo';
+      alertContent.subHeader = this.form.value.numPhone;
+      alertContent.message = 'Te llamaremos!';
+    } else {
+      alertContent.header = 'Error';
+      alertContent.subHeader = 'Número de teléfono';
+      alertContent.message = 'Por favor, ingrese un número de teléfono';
+    }
+    const alert = await this.alertController.create(alertContent);
+    await alert.present();
+  }
+
+  openPhoneNumber() {
+    window.open('tel:3204377068', '_self');
   }
 }

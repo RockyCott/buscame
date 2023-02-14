@@ -13,7 +13,7 @@
     <div class="card-auxiliares">
       <ion-slides [options]="slideOptsThumbs">
         <ion-slide>
-          <ion-card style="color: #dae2ff">
+          <ion-card style="--background: #dbe2ff">
             <div class="card-text">
               <div class="title">
                 <ion-icon
@@ -48,7 +48,7 @@
           </ion-card>
         </ion-slide>
         <ion-slide>
-          <ion-card style="color: #ffdadb">
+          <ion-card style="--background: #fedada">
             <div class="card-text">
               <div class="title">
                 <ion-icon name="call-sharp" id="call-sharp"></ion-icon>
@@ -68,12 +68,13 @@
                 O puedes presionar el botón debajo para ir directamente a la
                 llamada
               </div>
-              <br />
               <ion-button
-                style="--background: #92002a; width: 60%"
+                style="--background: #92002a; width: 80%"
                 [routerLink]="['/contacto']"
-                ><ion-icon name="call-sharp" id="call-sharp"></ion-icon>Llamar
-                ahora</ion-button
+                (click)="openPhoneNumber()"
+                ><span class="material-icons" style="font-size: 24px"
+                  >phone_in_talk</span
+                >Llamar ahora</ion-button
               >
             </div>
             <img
@@ -88,14 +89,14 @@
           </ion-card>
         </ion-slide>
         <ion-slide>
-          <ion-card style="color: #dae2ff">
+          <ion-card style="--background: #dbe2ff">
             <div class="card-text">
               <div class="title">
-                <ion-icon name="call-sharp" style="color: #001847"></ion-icon>
-                <ion-icon
-                  name="arrow-back-sharp"
-                  style="color: #001847"
-                ></ion-icon>
+                <span
+                  class="material-icons"
+                  style="color: #395ba9; font-size: 27px"
+                  >phone_callback</span
+                >
               </div>
               <br />
               <div class="subtitle" style="color: #001847">Te llamamos</div>
@@ -103,43 +104,62 @@
               <div class="description">
                 Déjanos tu número, te llamaremos de una
               </div>
-              <br />
-              <ion-card-header style="border: #001847">
+              <!-- <ion-card-header style="border: #001847">
                 <div class="phone-number" style="color: #001847">
                   Número de celular
                 </div>
-              </ion-card-header>
+              </ion-card-header> -->
+              <div class="num-phone">
+                <form [formGroup]="form">
+                  <ion-item style="--background: transparent; margin: 0">
+                    <ion-input
+                      type="number"
+                      placeholder="Digita un número"
+                      formControlName="numPhone"
+                    ></ion-input>
+                  </ion-item>
+                </form>
+              </div>
               <br />
               <ion-button
-                style="--background: #1d4390; width: 60%"
-                (click)="scrollToCard()"
-                ><ion-icon name="call-sharp" style="color: #001847"></ion-icon
-                ><ion-icon name="add-sharp"></ion-icon>Agendar
-                llamada</ion-button
+                style="--background: #1d4390; width: 85%; z-index: 2"
+                (click)="presentAlert()"
+                ><span class="material-icons" style="font-size: 24px"
+                  >add_call</span
+                >Agendar llamada</ion-button
               >
             </div>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/card2%20emergencia.png?alt=media&token=81fc68c4-0de2-4140-b187-65106542f9b9"
-              style="position: absolute; bottom: 0; right: -5px"
+              style="position: absolute; bottom: 0; right: -5px; z-index: 1"
             />
           </ion-card>
         </ion-slide>
       </ion-slides>
     </div>
     <div class="screen-two">
-    <ion-icon name="help-buoy-outline" id="logo" size="large"></ion-icon>
-    <div class="store-banner">
-      <div class="store-banner__content">
-        <h1 class="store-banner__title">
-          También puedes dirigirte a una de las tiendas de nuestra red de apoyo
-        </h1>
-        <p class="store-banner__description">
-          Escoge uno de los establecimientos aliados que esté más cerca de ti,
-          allí te brindarán todo el apoyo necesario
-        </p>
+      <ion-icon name="help-buoy-outline" id="logo" size="large"></ion-icon>
+      <div class="store-banner">
+        <div class="store-banner__content">
+          <h1 class="store-banner__title">
+            También puedes dirigirte a una de las tiendas de nuestra red de
+            apoyo
+          </h1>
+          <p class="store-banner__description">
+            Escoge uno de los establecimientos aliados que esté más cerca de ti,
+            allí te brindarán todo el apoyo necesario
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="card-logos" style="margin-bottom: 50px">
+      <ion-card>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/Logos.png?alt=media&token=9882d580-dff9-4b07-9572-80f0c0bf9971"
+          class="img-slide"
+        />
+      </ion-card>
+    </div>
   </div>
 </ion-content>
 
