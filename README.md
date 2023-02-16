@@ -26,7 +26,7 @@ Run `npm install`
 
 - paso 3
 
-Run `ionic serve`
+Run `ionic serve` o `ng serve`
 
 ejecutar y listo, se puede visualizar la plataforma :)
 
