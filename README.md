@@ -30,4 +30,4 @@ Run `ionic serve`
 
 ejecutar y listo, se puede visualizar la plataforma :)
 
-![](https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/Buscame.gif?alt=media&token=5c54d6ac-9333-4f82-945e-fd8440c57bec)
+![Buscame.gif](https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/Buscame.gif?alt=media&token=5c54d6ac-9333-4f82-945e-fd8440c57bec)
