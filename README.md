@@ -8,8 +8,8 @@ relacionadas con la violencia de genero, pero, no solo eso, la idea es totalment
 
 Este proyecto se trabajó con las siguientes tecnologías para aplicación hibrida:
 
-* Ionic v6
-* Angular ~^13
+* [Ionic v6](https://ionicframework.com/)
+* [Angular ~^13](https://angular.io/quick-start)
 
 La idea del proyecto es poder proporcionar tanto pagina como app, entonces para esto es perfecto Ionic que nos provee esa posibilidad, cabe aclarar que
 el diseño es mobile, por lo tanto para web es mejor visualizarlo desde dispositivo mobile, pero se podría claro configurar el sitio con responsive.
