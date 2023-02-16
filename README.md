@@ -6,7 +6,7 @@ relacionadas con la violencia de genero, pero, no solo eso, la idea es totalment
 * poder contactar a una linea de atención
 * poder ser contactado para recibir atención especializda
 
-Este proyecto se trabajó con las tecnologías:
+Este proyecto se trabajó con las siguientes tecnologías para aplicación hibrida:
 
 * Ionic v6
 * Angular ~^13
@@ -30,4 +30,10 @@ Run `ionic serve`
 
 ejecutar y listo, se puede visualizar la plataforma :)
 
-![Buscame.gif](https://firebasestorage.googleapis.com/v0/b/buscame-58de2.appspot.com/o/Buscame.gif?alt=media&token=5c54d6ac-9333-4f82-945e-fd8440c57bec)
+![ss](Buscame.gif)
+
+Visualizar desde pagina web: [Búscame](https://rockycott.github.io/buscame/)
+
+Apk: [Búscame Apk](https://drive.google.com/file/d/10DnFdx8mikYeyIR5gGcgWZvHlik880sM/view?usp=share_link)
+
+La apk como no está anexada a play store o algo por el estilo, entonces al intentar instalar te puede salir si deseas enviar a revisar, sería marcar no enviar y ya tendrías instalada la app.
