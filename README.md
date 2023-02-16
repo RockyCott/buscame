@@ -32,7 +32,7 @@ ejecutar y listo, se puede visualizar la plataforma :)
 
 ![ss](Buscame.gif)
 
-Visualizar desde pagina web: [Búscame](https://rockycott.github.io/buscame/)
+Visualizar desde pagina web: [Búscame](https://rockycott.github.io/buscame-ionic-angular/)
 
 Apk: [Búscame Apk](https://drive.google.com/file/d/10DnFdx8mikYeyIR5gGcgWZvHlik880sM/view?usp=share_link)
 
